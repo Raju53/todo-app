@@ -1,0 +1,100 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 25px;
+    margin: 15px;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#todoInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#addTodo {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#todoList {
+    list-style: none;
+    padding: 0;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    max-height: 300px; /* Set a maximum height */
+}
+
+.todo-item {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-text {
+    flex-grow: 1;
+    word-wrap: break-word; /* Allow text to wrap */
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #f00; /* Red color for delete */
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 60%; /* Medium width on tablets */
+    }
+}
