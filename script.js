@@ -53,6 +53,6 @@ function deleteTodo(event) {
     if (checkbox.checked) {
         todoList.removeChild(todoItem);
     } else {
-        alert("Please complete Todo and check the todo to be deleted.");
+        alert("Please complete task and check the todo to be deleted.");
     }
 }
